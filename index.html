@@ -1,174 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Harry Fitness</title>
-</head>
-<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<style>
-    /* CSS Reset */
-    body {
-        font-family: 'Baloo Bhai', cursive;
+    <title>Introductory Page</title>
+    <style>
+        body {
+        background-image: url('186244.jpg');
+        background-repeat: no-repeat;
+        }
+        .button {
+        border: none;
         color: white;
-        margin: 0px;
-        padding: 0px;
-        background: url('img/pb.jpg');
-    }
-
-    .left {
-        display: inline-block;
-        /* border: 2px solid red; */
-        position: absolute;
-        left: 60px;
-        top: 20px;
-    }
-
-    .left img {
-        width: 136px;
-        filter: invert(100%);
-    }
-
-    .left div {
-        line-height: 19px;
-        font-size: 26px;
+        padding: 16px 32px;
         text-align: center;
-    }
-
-    .mid {
-        display: block;
-        width: 50%;
-        margin: 29px auto;
-        /* border: 2px solid green; */
-    }
-
-    .right {
-        position: absolute;
-        right: 34px;
-        top: 43px;
-        display: inline-block;
-        /* border: 2px solid yellow; */
-    }
-
-    .navbar {
-        display: inline-block;
-    }
-
-    .navbar li {
-        display: inline-block;
-        font-size: 25px;
-    }
-
-    .navbar li a {
-        color: white;
         text-decoration: none;
-        padding: 34px 23px;
-
-    }
-
-    .navbar li a:hover{
-        text-decoration: underline;
-        color: grey;
-
-    }
-
-    .btn {
-        font-family: 'Baloo Bhai', cursive;
-        margin: 0px 9px;
-        background-color: black;
-        color: white;
-        padding: 4px 14px;
-        border: 2px solid grey;
-        border-radius: 10px;
-        font-size: 20px;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
         cursor: pointer;
-    }
-
-    .btn:hover {
-        background-color: rgb(31, 30, 30);
-    }
-
-    .container {
-        border: 2px solid white;
-        margin: 106px 80px;
-        padding: 75px;
-        width: 33%;
-        border-radius: 28px;
-    }
-
-    .form-group input {
-        font-family: 'Baloo Bhai', cursive;
-        text-align: center;
-        display: block;
-        width: 508px;
-        padding: 1px;
-        border: 2px solid black;
-        margin: 11px auto;
-        font-size: 25px;
-        border-radius: 8px;
-    }
-
-    .container h1 {
-        text-align: center;
-    }
-
-    .container button {
-        display: block;
-        width: 74%;
-        margin: 20px auto;
-    }
-</style>
-
+        }
+        
+        .button1 {
+        background-color: #af4caf; 
+        color: white; 
+        border: 2px solid yellow;
+        }
+        
+        .button1:hover {
+        background-color: #4CAF50;
+        color: white;
+        }
+        
+        .button2 {
+        background-color: #44ba00; 
+        color: white; 
+        border: 2px solid yellow;
+        }
+        
+        .button2:hover {
+        background-color: #008CBA;
+        color: white;
+        }
+        
+        .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        }
+    </style>
+</head>
 <body>
-    <header class="header">
-        <!-- Left box for logo -->
-        <div class="left">
-            <img src="img/gym.jpg" alt="">
-            <div>Suman Fitness</div>
-        </div>
-        <!-- Mid box for navbar -->
-        <div class="mid">
-            <ul class="navbar">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Fitness Calculator</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
+    <h1 style="color:yellow; text-align: center; font-size: 300%;">Hi there!</h1>
 
-        <!-- Right box for buttons -->
-        <div class="right">
-            <button class="btn">Call Us Now</button>
-            <button class="btn">Email Us</button>
-        </div>
-    </header>
-    <div class="container">
-        <h1>Join the best gym of Delhi now</h1>
-        <form action="noaction.php">
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Name">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Age">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Gender">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Locality">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Email Id">
-            </div>
-            <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Phone Number">
-            </div>
-            <button class="btn">Submit</button>
-        </form>
+    <p style="color:bisque; text-align: center; font-size: 200%;">Here are some of my projects related to frontend development. Please click the button to see the project.</p>
+    <!-- <p style="color:greenyellow; text-align: center;"><strong>Tip:</strong> Use the transition-duration property to determine the speed of the "hover" effect:</p> -->
+    <div class="center">
+        <a href="https://codewithuma.github.io/Project1/" target="_blank"><button class="button button1">Project 1</button></a>
+    </div>
+
+    <div class="center">
+        <a href="https://codewithuma.github.io/project2/public_html/" target="_blank"><button class="button button2">Project 2<button><a>
     </div>
 </body>
-
 </html>
